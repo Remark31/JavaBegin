@@ -13,6 +13,7 @@ public class Employee extends Person {
     private double salary; // 以分为单位
     private LocalDate hireDay;
 
+
     public Employee(String name, double s, int year, int month, int day) {
         super(name);
         this.salary = s;
@@ -102,6 +103,17 @@ public class Employee extends Person {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+
+        Employee s = null;
+        try {
+            s = (Employee) cl.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        System.out.println("End: " + s);
 
 
     }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 enum Size {
     SMALL("S"), MEDIUM("M"), LARGE("L"), EXTRA_LARGE("XL");
 
-    private Size(String abbreviation) {
+    Size(String abbreviation) {
         this.abbreviation = abbreviation;
     }
 
